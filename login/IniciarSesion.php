@@ -31,7 +31,7 @@ if (isset($_POST['usuario']) && isset($_POST['contraseña'])){
                 $_SESSION['usuario'] = $row['usuario'];
                 $_SESSION['Nombre_Completo'] = $row['Nombre_Completo'];
                 $_SESSION['Id'] = $row['Id'];
-                header("Location: Inicio.php");
+                header("Location: sesionusuario.php");
                 exit();
             }else{
                 header("Location: Index.php?error=El usuario o la clave son incorrectas");
