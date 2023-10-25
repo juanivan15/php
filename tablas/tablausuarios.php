@@ -16,7 +16,7 @@ include '../conexion/conexion.php';
 </head>
 <body>
     <h1>Usuarios registrados</h1>
-    <table>
+    <table class="table">
         <thead>
             <th>Usuario</th>
             <th>Email</th>

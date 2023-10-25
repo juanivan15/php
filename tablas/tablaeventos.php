@@ -16,7 +16,7 @@ include '../conexion/conexion.php';
 </head>
 <body>
     <h1>Eventos guardados</h1>
-    <table>
+    <table class="table">
         <thead>
             <th>Propietario de la reserva</th>
             <th>Fecha</th>

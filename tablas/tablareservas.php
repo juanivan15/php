@@ -16,7 +16,7 @@ include '../conexion/conexion.php';
 </head>
 <body>
     <h1>Tabla de reservas</h1>
-    <table>
+    <table class="table">
         <thead>
             <th>Id Usuario</th>
             <th>Id Evento</th>

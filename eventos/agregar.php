@@ -43,38 +43,47 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 
 ?>
-<link rel="stylesheet" href="style.css">
-<title>Agregar nuevo evento</title>
+<head>
+    <title>Agregar nuevo evento</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<form action="<?= $_SERVER["PHP_SELF"] ?>" method="POST">
-<div>
-    <label for="propietario_reserva">Propietario de la reserva</label>
-    <input type="text" name="propietario_reserva" value="<?= $propietario_reserva ?>" required>
+<form class="form" action="<?= $_SERVER["PHP_SELF"] ?>" method="POST">
+<div class="row">
+    <div class="col-12">
+        <label for="propietario_reserva">Propietario de la reserva</label>
+        <input type="text" name="propietario_reserva" value="<?= $propietario_reserva ?>" required>
+    </div>
+    <div class="col-12">
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" value="<?= $fecha ?>" required>
+    </div>
+    <div class="col-12">
+        <label for="hora">Hora</label>
+        <input type="text" name="hora" value="<?= $hora ?>" required>
+    </div>
+    <div class="col-12">
+        <label for="ubicacion">Ubicacion</label>
+        <input type="text" name="ubicacion" value="<?= $ubicacion ?>" required>
+    </div>
+    <div class="col-12">
+        <label for="capacidad_maxima">Capacidad Máxima</label>
+        <input type="text" name="capacidad_maxima" value="<?= $capacidad_maxima ?>" required>
+    </div>
+    <div class="col-12">
+        <label for="tipo_evento">Tipo</label>
+        <select id="tipo_evento" name="tipo_evento">
+                <option value="casamiento">Casamiento</option>
+                <option value="cumpleaños">Cumpleaños</option>
+                <option value="comunion">Comunión</option>
+        </select>
+    </div>
+    <button type="submit" class="envio">Guardar</button>
 </div>
-<div>
-    <label for="fecha">Fecha</label>
-    <input type="date" name="fecha" value="<?= $fecha ?>" required>
-</div>
-<div>
-    <label for="hora">Hora</label>
-    <input type="text" name="hora" value="<?= $hora ?>" required>
-</div>
-<div>
-    <label for="ubicacion">Ubicacion</label>
-    <input type="text" name="ubicacion" value="<?= $ubicacion ?>" required>
-</div>
-<div>
-    <label for="capacidad_maxima">Capacidad Máxima</label>
-    <input type="text" name="capacidad_maxima" value="<?= $capacidad_maxima ?>" required>
-</div>
-<div>
-    <label for="tipo_evento">Tipo</label>
-    <select id="tipo_evento" name="tipo_evento">
-            <option value="casamiento">Casamiento</option>
-            <option value="cumpleaños">Cumpleaños</option>
-            <option value="comunion">Comunión</option>
-    </select>
-</div>
-<button type="submit" class="envio">Guardar</button>
 </form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
 </body>

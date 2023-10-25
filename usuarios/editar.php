@@ -50,10 +50,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 
 ?>
+<head>
 <title>Editar información del usuario</title>
-<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
 <body>
-<form action="<?= $_SERVER["PHP_SELF"]; ?>?id=<?= $id ?>" method="POST">
+    <h1>Editar información del usuario</h1>
+<form class="form" action="<?= $_SERVER["PHP_SELF"]; ?>?id=<?= $id ?>" method="POST">
     <input type="hidden" name="id" value="<?= $id ?>">
 <div>
     <label for="usuario">Usuario</label>
@@ -77,5 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 </div>
 <button type="submit" class="envio">Guardar</button>
 </form>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
 </body>

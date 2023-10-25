@@ -54,10 +54,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 
 ?>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
 <title>Editar información del evento</title>
 <link rel="stylesheet" href="style.css">
 <body>
-<form action="<?= $_SERVER["PHP_SELF"]; ?>?id=<?= $id ?>" method="POST">
+<form class="form" action="<?= $_SERVER["PHP_SELF"]; ?>?id=<?= $id ?>" method="POST">
     <input type="hidden" name="id" value="<?= $id ?>">
 <div>
     <label for="propietario_reserva">Propietario de la reserva</label>
@@ -81,5 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 </div>
 <button type="submit" class="envio">Guardar</button>
 </form>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
 </body>

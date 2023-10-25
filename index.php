@@ -76,7 +76,7 @@
                 <div class="card-body">
                     <h2 class="card-title">Cumpleaños</h2>
                     <p class="card-text">Mirá las distinta opciones que tenemos para vos</p>
-                    <a href="nopa.html" class="btn colorBtn">Reservar</a>
+                    <a href="eventos/agregar.php" class="btn colorBtn">Reservar</a>
                 </div>
             </div>
         </div>    
@@ -86,7 +86,7 @@
                 <div class="card-body">
                     <h2 class="card-title">Casamiento</h2>
                     <p class="card-text">Mirá las distinta opciones que tenemos para vos</p>
-                    <a href="nopa.html" class="btn colorBtn">Reservar</a>
+                    <a href="eventos/agregar.php" class="btn colorBtn">Reservar</a>
                 </div>
             </div>
         </div>
@@ -97,7 +97,7 @@
                 <div class="card-body">
                     <h2 class="card-title">Comunión</h2>
                     <p class="card-text">Mirá las distinta opciones que tenemos para vos</p>
-                    <a href="nopa.html" class="btn colorBtn">Reservar</a>
+                    <a href="eventos/agregar.php" class="btn colorBtn">Reservar</a>
                 </div>
             </div>
         </div>
