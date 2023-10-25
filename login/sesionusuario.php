@@ -31,6 +31,12 @@
                         <a class="nav-link active:hover" href="../tablas/tablareservas.php">Ver reservas</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link active:hover" href="../tablas/tablaeventos.php">Ver eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active:hover" href="../tablas/tablausuarios.php">Ver usuarios</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active:hover" href="vistausuario.php">Vista exotica</a>
                     </li>
                     <li class="nav-item">

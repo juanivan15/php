@@ -25,6 +25,9 @@
                         <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="login/vistausuario.php">Filtro de búsqueda</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="login/Index.php">Iniciar Sesión</a>
                     </li>
                     <li class="nav-item">

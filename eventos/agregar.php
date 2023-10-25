@@ -52,35 +52,35 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
 <form class="form" action="<?= $_SERVER["PHP_SELF"] ?>" method="POST">
 <div class="row">
-    <div class="col-12">
+    <div class="col-6">
         <label for="propietario_reserva">Propietario de la reserva</label>
-        <input type="text" name="propietario_reserva" value="<?= $propietario_reserva ?>" required>
+        <input type="text" class="form-control" name="propietario_reserva" value="<?= $propietario_reserva ?>" required>
     </div>
-    <div class="col-12">
+    <div class="col-6">
         <label for="fecha">Fecha</label>
-        <input type="date" name="fecha" value="<?= $fecha ?>" required>
+        <input type="date" class="form-control" name="fecha" value="<?= $fecha ?>" required>
     </div>
-    <div class="col-12">
+    <div class="col-6">
         <label for="hora">Hora</label>
-        <input type="text" name="hora" value="<?= $hora ?>" required>
+        <input type="text" class="form-control" name="hora" value="<?= $hora ?>" required>
     </div>
-    <div class="col-12">
+    <div class="col-6">
         <label for="ubicacion">Ubicacion</label>
-        <input type="text" name="ubicacion" value="<?= $ubicacion ?>" required>
+        <input type="text" class="form-control" name="ubicacion" value="<?= $ubicacion ?>" required>
     </div>
-    <div class="col-12">
+    <div class="col-6">
         <label for="capacidad_maxima">Capacidad Máxima</label>
-        <input type="text" name="capacidad_maxima" value="<?= $capacidad_maxima ?>" required>
+        <input type="text" class="form-control" name="capacidad_maxima" value="<?= $capacidad_maxima ?>" required>
     </div>
-    <div class="col-12">
+    <div class="col-6">
         <label for="tipo_evento">Tipo</label>
-        <select id="tipo_evento" name="tipo_evento">
+        <select class="form-control" id="tipo_evento" name="tipo_evento">
                 <option value="casamiento">Casamiento</option>
                 <option value="cumpleaños">Cumpleaños</option>
                 <option value="comunion">Comunión</option>
         </select>
     </div>
-    <button type="submit" class="envio">Guardar</button>
+    <button type="submit" class="form-control btn btn-primary">Reservar</button>
 </div>
 </form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

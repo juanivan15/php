@@ -30,7 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $stmt->execute();
 
-        header('Location: ../tablas/tablausuarios.php');
+        header('Location: ../index.php');
     } catch (PDOException $e){
         echo $e ;
     }
@@ -48,23 +48,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
 <form class="form" action="<?= $_SERVER["PHP_SELF"] ?>" method="POST">
-<div>
+<div class="col-6">
     <label for="usuario">Usuario</label>
     <input type="text" class="form-control" name="usuario" value="<?= $usuario ?>" required>
 </div>
-<div>
+<div class="col-6">
     <label for="contraseña">Contraseña</label>
     <input type="password" class="form-control" name="contraseña" value="<?= $contraseña ?>" required>
 </div>
-<div>
+<div class="col-6">
     <label for="email">Email</label>
     <input type="email" class="form-control" name="email" value="<?= $email ?>" required>
 </div>
-<div>
+<div class="col-6">
     <label for="telefono">Telefono</label>
     <input type="text" class="form-control" name="telefono" value="<?= $telefono ?>" required>
 </div>
-<div>
+<div class="col-6">
     <label for="direccion">Direccion</label>
     <input type="text" class="form-control" name="direccion" value="<?= $direccion ?>" required>
 </div>
