@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     try{$stmt = $conn->prepare("
             UPDATE evento SET 
-                nombre = '$nomfecha
+                nombre = '$nombre',
                 fecha = '$fecha',
                 hora = '$hora',
                 ubicacion = '$ubicacion',
