@@ -9,7 +9,7 @@ $id = htmlspecialchars($_GET["id"]);
 
 try{
     $stmt = $conn->prepare("
-        SELECT id_evento, nombre, fecha, hora, ubicacion, capacidad_maxima, tipo_evento 
+        SELECT id_evento, propietario_reserva, fecha, hora, ubicacion, capacidad_maxima, tipo_evento 
         FROM evento
         WHERE id_evento = $id");
 
@@ -19,7 +19,7 @@ try{
 
     $eventos = $stmt->fetch();
 
-    $nombre = $eventos["nombre"];
+    $propietario_reserva = $eventos["propietario_reserva"];
     $fecha = $eventos["fecha"];
     $hora = $eventos["hora"];
     $ubicacion = $eventos["ubicacion"];
@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     try{$stmt = $conn->prepare("
             UPDATE evento SET 
-                nombre = '$nombre',
+                propietario_reserva = '$propietario_reserva',
                 fecha = '$fecha',
                 hora = '$hora',
                 ubicacion = '$ubicacion',
@@ -60,8 +60,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 <form action="<?= $_SERVER["PHP_SELF"]; ?>?id=<?= $id ?>" method="POST">
     <input type="hidden" name="id" value="<?= $id ?>">
 <div>
-    <label for="nombre">Nombre</label>
-    <input type="text" name="nombre" value="<?= $nombre ?>" required>
+    <label for="propietario_reserva">Propietario de la reserva</label>
+    <input type="text" name="propietario_reserva" value="<?= $propietario_reserva ?>" required>
 </div>
 <div>
     <label for="fecha">Fecha</label>

@@ -1,9 +1,15 @@
 *{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    box-sizing: border-box;
+}
+*{
     margin: 0;
     padding: 0;;
 }
 body{
-    background-color: white;
+    background-color: #b4b190;
     background-position: center;
     color: black;
 }
@@ -11,19 +17,21 @@ body{
     display: inline-block;
 }
 footer{
-    background-color: white;
+    background-color: #b4b190;
     color: black;
     text-align: center;
     margin-bottom: 0;
-}
-.caja{
-    width: 400px;
-    height: 550px;
 }
 h2{
     color: black;
     font-size: 1.5rem;
     font-weight: bold;
+}
+h2, h3, h4, ul{
+    text-align: center;
+}
+ul{
+    list-style: none;
 }
 .lista{
     color: black;
@@ -45,6 +53,9 @@ a{
     text-transform: uppercase;
     color: black;
 }
+p{
+    text-align: center;
+}
 .inicioSesion{
     background-image: none;
     background-color: black;
@@ -58,7 +69,6 @@ a{
     border: black solid;
 }
 .bodylogin{
-    background-image: radial-gradient(circle at 50% -20.71%, #a6ffab 0, #90ffab 12.5%, #76ffb0 25%, #54ffb5 37.5%, #08ffbb 50%, #00fbc2 62.5%, #00f8ca 75%, #00f4d3 87.5, #00f1dc 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,12 +76,6 @@ a{
     flex-direction: column;
 }
 
-*{
-    font-family: 'Lato', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'PT Sans', sans-serif;
-    box-sizing: border-box;
-}
 
 form{
     width: 600px;
@@ -143,4 +147,12 @@ a:hover{
     border-radius: 5px;
     margin: 20px auto;
 
+}
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
 }

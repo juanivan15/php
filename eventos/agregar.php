@@ -2,7 +2,7 @@
 include '../conexion/config.php';
 include '../conexion/conexion.php';
 
-$nombre = "";
+$propietario_reserva = "";
 $fecha = "";
 $hora = "";
 $ubicacion = "";
@@ -11,7 +11,7 @@ $tipo_evento = "";
 
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    $nombre = $_POST['nombre'];
+    $propietario_reserva = $_POST['propietario_reserva'];
     $fecha = $_POST['fecha'];
     $hora = $_POST['hora'];
     $ubicacion = $_POST['ubicacion'];
@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     try{
         $stmt = $conn->prepare("
             INSERT INTO evento SET 
-                nombre = '$nombre',
+                propietario_reserva = '$propietario_reserva',
                 fecha = '$fecha',
                 hora = '$hora',
                 ubicacion = '$ubicacion',
@@ -48,8 +48,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
 <form action="<?= $_SERVER["PHP_SELF"] ?>" method="POST">
 <div>
-    <label for="nombre">Nombre</label>
-    <input type="text" name="nombre" value="<?= $nombre ?>" required>
+    <label for="propietario_reserva">Propietario de la reserva</label>
+    <input type="text" name="propietario_reserva" value="<?= $propietario_reserva ?>" required>
 </div>
 <div>
     <label for="fecha">Fecha</label>
@@ -69,7 +69,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </div>
 <div>
     <label for="tipo_evento">Tipo</label>
-    <input type="text" name="tipo_evento" value="<?= $tipo_evento ?>" required>
+    <select id="tipo_evento" name="tipo_evento">
+            <option value="casamiento">Casamiento</option>
+            <option value="cumpleaños">Cumpleaños</option>
+            <option value="comunion">Comunión</option>
+    </select>
 </div>
 <button type="submit" class="envio">Guardar</button>
 </form>

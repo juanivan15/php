@@ -35,16 +35,73 @@
         </div>
     </header>
     <div class="caja">
-        <h2>En nuestra página encontrarás los mejores servicios de:</h2>
-           <ul class="lista">
-               <li>Gestión de eventos.</li>
-               <li>Reserva de fechas.</li>
-               <li>Reserva de los mejores lugares para tu evento.</li>
-               <li>Servicio de Catering.</li>
-               <li>Y muchas cosas más...</li>
-           </ul>
+        <h2>Bienvenido a EvenJohn</h2>
+        <div>
+            <p> Tu Solución Integral para la Gestión de Eventos
+
+                       ¿Qué es EvenJohn?
+
+                Es la plataforma definitiva para gestionar tus eventos de manera sencilla y exitosa. 
+                Con EvenJohn, puedes: 
+                <ul>
+                    <li>Iniciar sesion</li>
+                    <li>Registrarte como un nuevo usuario</li>
+                    <li>Configurar fechas para tu evento</li>
+                    <li>Contactar con asistentes</li>
+                    <li>Acceder a la lista de eventos disponibles</li>
+                </ul>
+                <h3>¿Por qué Elegir EvenJohn?</h3> 
+                <ul>
+                    <li>Facilidad de uso </li>
+                    <li>Seguridad </li>
+                    <li>Soporte 24/7 </li>
+                    <li>Mejores precios </li>
+                </ul>
+
+                <h4>¿Listo para comenzar?</h4>
+            </p>
+        </div>
         <p class="msj">Contratanos y nosotros te hacemos vivir la mejor fiesta de tu vida!</p>
     </div>
+
+    <div class="bodys">
+    <div class="tituloProductos mt-1">
+        <h2>TIPOS DE EVENTOS QUE OFRECEMOS</h2>
+        <br>
+    </div>
+    <div class="row">
+        <div class="col-xl-4 col-md-6 col-sm-12 centered-div">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="img/cumpleaños.avif" class="card-img-top" alt="Cumpleaños">
+                <div class="card-body">
+                    <h2 class="card-title">Cumpleaños</h2>
+                    <p class="card-text">Mirá las distinta opciones que tenemos para vos</p>
+                    <a href="nopa.html" class="btn colorBtn">Reservar</a>
+                </div>
+            </div>
+        </div>    
+        <div class="col-xl-4 col-md-6 col-sm-12 centered-div">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="img/casamiento.jpeg" class="card-img-top" alt="Casamiento">
+                <div class="card-body">
+                    <h2 class="card-title">Casamiento</h2>
+                    <p class="card-text">Mirá las distinta opciones que tenemos para vos</p>
+                    <a href="nopa.html" class="btn colorBtn">Reservar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 col-sm-12 centered-div">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="img/comunion.jpg" class="card-img-top" alt="Comunión">
+                <div class="card-body">
+                    <h2 class="card-title">Comunión</h2>
+                    <p class="card-text">Mirá las distinta opciones que tenemos para vos</p>
+                    <a href="nopa.html" class="btn colorBtn">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </div>    
 
 
 
@@ -57,7 +114,7 @@
             <li class="navegacion"><a href="pages/nosotros.php" target="_blank"><img src="img/whatsapp.png"
                         alt="logo de telefono" class=""></a></li>
         </ul>
-        <p>Copyright © 2023 <a href="index.php">EVENJOHN</a>.</p>
+        <p>Copyright © 2023 EVENJOHN.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">

@@ -10,6 +10,8 @@ include '../conexion/conexion.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos: Reservas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +24,7 @@ include '../conexion/conexion.php';
         </thead>
         <tbody>
             <?php
-                $stmt = $conn->prepare("SELECT id_usuario FROM usuarios AND SELECT id_evento, capacidad_maxima FROM evento");
+                $stmt = $conn->prepare("SELECT usuarios.id_usuario, evento.id_evento, evento.capacidad_maxima FROM usuarios, evento");
 
                 $stmt->execute();
             
@@ -49,6 +51,8 @@ include '../conexion/conexion.php';
         </tbody>
         
     </table>
-    <button><a href="../eventos/agregar.php">Nuevo Evento</a></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
 </body>
 </html>

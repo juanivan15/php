@@ -10,13 +10,15 @@ include '../conexion/conexion.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos: tabla</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Eventos guardados</h1>
     <table>
         <thead>
-            <th>Nombre</th>
+            <th>Propietario de la reserva</th>
             <th>Fecha</th>
             <th>Hora</th>
             <th>Ubicacion</th>
@@ -26,7 +28,7 @@ include '../conexion/conexion.php';
         </thead>
         <tbody>
             <?php
-                $stmt = $conn->prepare("SELECT id_evento, nombre, fecha, hora, ubicacion, capacidad_maxima, tipo_evento FROM evento");
+                $stmt = $conn->prepare("SELECT id_evento, propietario_reserva, fecha, hora, ubicacion, capacidad_maxima, tipo_evento FROM evento");
 
                 $stmt->execute();
             
@@ -36,7 +38,7 @@ include '../conexion/conexion.php';
             ?>
             <?php foreach($eventos as $evento): ?>
                 <tr>
-                    <td><?= $evento['nombre'] ?></td>
+                    <td><?= $evento['propietario_reserva'] ?></td>
                     <td><?= $evento['fecha'] ?></td>
                     <td><?= $evento['hora'] ?></td>
                     <td><?= $evento['ubicacion'] ?></td>
@@ -56,5 +58,8 @@ include '../conexion/conexion.php';
         
     </table>
     <button><a href="../eventos/agregar.php">Nuevo Evento</a></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
 </body>
 </html>

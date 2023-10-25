@@ -28,6 +28,12 @@
                         <a class="nav-link active:hover" href="../usuarios/agregar.php">Agregar Usuario</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link active:hover" href="../tablas/tablareservas.php">Ver reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active:hover" href="vistausuario.php">Vista exotica</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active:hover" href="CerrarSesion.php">Cerrar Sesión</a>
                     </li>
                 </ul>
