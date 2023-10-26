@@ -44,9 +44,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Agregar nuevo usuario</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <h1>Agregar nuevo usuario</h1>
+    <br>
+    <a href="../login/sesionusuario.php">Volver a Inicio</a>
+    <br><br><br>
 <form class="form" action="<?= $_SERVER["PHP_SELF"] ?>" method="POST">
 <div class="col-6">
     <label for="usuario">Usuario</label>
@@ -69,7 +73,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <input type="text" class="form-control" name="direccion" value="<?= $direccion ?>" required>
 </div>
 <button type="submit" class="btn btn-primary form-control">Guardar</button>
+<br>
 </form>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
     </script>

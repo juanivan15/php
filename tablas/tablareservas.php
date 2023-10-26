@@ -12,19 +12,21 @@ include '../conexion/conexion.php';
     <title>Eventos: Reservas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <h1>Tabla de reservas</h1>
+<button class="btn btn-primary form-control"><a href="../login/sesionusuario.php">Volver a inicio</a></button>
+
     <table class="table">
         <thead>
-            <th>Id Usuario</th>
+            <th>Propietario</th>
             <th>Id Evento</th>
             <th>Cantidad de invitados</th>
         </thead>
         <tbody>
             <?php
-                $stmt = $conn->prepare("SELECT usuarios.id_usuario, evento.id_evento, evento.capacidad_maxima FROM usuarios, evento");
+                $stmt = $conn->prepare("SELECT propietario_reserva, id_evento, capacidad_maxima FROM evento");
 
                 $stmt->execute();
             
@@ -34,7 +36,7 @@ include '../conexion/conexion.php';
             ?>
             <?php foreach($reservas as $reserva): ?>
                 <tr>
-                    <td><?= $reserva['id_usuario'] ?></td>
+                    <td><?= $reserva['propietario_reserva'] ?></td>
                     <td><?= $reserva['id_evento'] ?></td>
                     <td><?= $reserva['capacidad_maxima'] ?></td>
 

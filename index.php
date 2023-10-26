@@ -25,27 +25,27 @@
                         <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="login/vistausuario.php">Filtro de búsqueda</a>
+                        <a class="nav-link" aria-current="page" href="filtradocomun.php">Filtro de búsqueda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login/Index.php">Iniciar Sesión</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="usuarios/agregar.php">Registrarse</a>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
         </div>
     </header>
     <div class="caja">
-        <h2>Bienvenido a EvenJohn</h2>
+        <h1>BIENVENIDO A EVENJOHN</h1>
         <div>
             <p> Tu Solución Integral para la Gestión de Eventos
 
-                       ¿Qué es EvenJohn?
+                       ¿Qué es EVENJOHN?
 
                 Es la plataforma definitiva para gestionar tus eventos de manera sencilla y exitosa. 
-                Con EvenJohn, puedes: 
+                Con EVENJOHN, puedes: 
                 <ul>
                     <li>Iniciar sesion</li>
                     <li>Registrarte como un nuevo usuario</li>
@@ -53,7 +53,7 @@
                     <li>Contactar con asistentes</li>
                     <li>Acceder a la lista de eventos disponibles</li>
                 </ul>
-                <h3>¿Por qué Elegir EvenJohn?</h3> 
+                <h3>¿Por qué elegir EVENJOHN?</h3> 
                 <ul>
                     <li>Facilidad de uso </li>
                     <li>Seguridad </li>
@@ -79,7 +79,7 @@
                 <div class="card-body">
                     <h2 class="card-title">Cumpleaños</h2>
                     <p class="card-text">Mirá las distinta opciones que tenemos para vos</p>
-                    <a href="eventos/agregar.php" class="btn colorBtn">Reservar</a>
+                    <a href="eventos/agregarcomun.php" class="btn colorBtn">Reservar</a>
                 </div>
             </div>
         </div>    
@@ -89,7 +89,7 @@
                 <div class="card-body">
                     <h2 class="card-title">Casamiento</h2>
                     <p class="card-text">Mirá las distinta opciones que tenemos para vos</p>
-                    <a href="eventos/agregar.php" class="btn colorBtn">Reservar</a>
+                    <a href="eventos/agregarcomun.php" class="btn colorBtn">Reservar</a>
                 </div>
             </div>
         </div>
@@ -100,7 +100,7 @@
                 <div class="card-body">
                     <h2 class="card-title">Comunión</h2>
                     <p class="card-text">Mirá las distinta opciones que tenemos para vos</p>
-                    <a href="eventos/agregar.php" class="btn colorBtn">Reservar</a>
+                    <a href="eventos/agregarcomun.php" class="btn colorBtn">Reservar</a>
                 </div>
             </div>
         </div>
@@ -110,11 +110,11 @@
 
     <footer>
         <ul>
-            <li class="navegacion"><a href="https://www.instagram.com/juanivan15/" target="_blank"><img src="img/instagram.png"
+            <li class="navegacion"><a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"
                         alt="logo de instagram" class=""></a></li>
             <li class="navegacion"><a href="https://facebook.com" target="_blank"><img src="img/facebook.png"
                         alt="Logo de facebook" class=""></a></li>
-            <li class="navegacion"><a href="pages/nosotros.php" target="_blank"><img src="img/whatsapp.png"
+            <li class="navegacion"><a href="https://web.whatsapp" target="_blank"><img src="img/whatsapp.png"
                         alt="logo de telefono" class=""></a></li>
         </ul>
         <p>Copyright © 2023 EVENJOHN.</p>

@@ -37,7 +37,7 @@
                         <a class="nav-link active:hover" href="../tablas/tablausuarios.php">Ver usuarios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active:hover" href="vistausuario.php">Vista exotica</a>
+                        <a class="nav-link active:hover" href="filtradoadmin.php">Filtrado de búsqueda de eventos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active:hover" href="CerrarSesion.php">Cerrar Sesión</a>
@@ -47,18 +47,57 @@
         </div>
     </header>
 
+    <div class="bodys">
+    <div class="tituloProductos mt-1">
+        <h2>TIPOS DE EVENTOS QUE OFRECEMOS</h2>
+        <br>
+    </div>
+    <div class="row">
+        <div class="col-xl-4 col-md-6 col-sm-12 centered-div">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="../img/cumpleaños.avif" class="card-img-top" alt="Cumpleaños">
+                <div class="card-body">
+                    <h2 class="card-title">Cumpleaños</h2>
+                    <p class="card-text">Mirá las distinta opciones que tenemos para vos</p>
+                    <a href="../eventos/agregar.php" class="btn colorBtn">Reservar</a>
+                </div>
+            </div>
+        </div>    
+        <div class="col-xl-4 col-md-6 col-sm-12 centered-div">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="../img/casamiento.jpeg" class="card-img-top" alt="Casamiento">
+                <div class="card-body">
+                    <h2 class="card-title">Casamiento</h2>
+                    <p class="card-text">Mirá las distinta opciones que tenemos para vos</p>
+                    <a href="../eventos/agregar.php" class="btn colorBtn">Reservar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 col-sm-12 centered-div">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="../img/comunion.jpg" class="card-img-top" alt="Comunión">
+                <div class="card-body">
+                    <h2 class="card-title">Comunión</h2>
+                    <p class="card-text">Mirá las distinta opciones que tenemos para vos</p>
+                    <a href="../eventos/agregar.php" class="btn colorBtn">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+
 
 
     <footer>
         <ul>
-            <li class="navegacion"><a href="https://www.instagram.com/juanivan15/" target="_blank"><img src="../img/instagram.png"
+            <li class="navegacion"><a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png"
                         alt="logo de instagram" class=""></a></li>
             <li class="navegacion"><a href="https://facebook.com" target="_blank"><img src="../img/facebook.png"
                         alt="Logo de facebook" class=""></a></li>
-            <li class="navegacion"><a href="pages/nosotros.php" target="_blank"><img src="../img/whatsapp.png"
+            <li class="navegacion"><a href="https://web.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png"
                         alt="logo de telefono" class=""></a></li>
         </ul>
-        <p>Copyright © 2023 <a href="index.php">EVENJOHN</a>.</p>
+        <p>Copyright © 2023 EVENJOHN.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">

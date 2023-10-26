@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <?php
@@ -19,14 +21,14 @@
     
     $propietario_reserva = '';
     $fecha = '';
-    $hora = '';
+    $tipo_evento = '';
     $ubicacion = '';
     
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         $propietario_reserva = $_POST['propietario_reserva'];
         $fecha = $_POST['fecha'];
-        $hora = $_POST['hora'];
+        $tipo_evento = $_POST['tipo_evento'];
         $ubicacion = $_POST['ubicacion'];
         
         
@@ -39,8 +41,8 @@
         if (!empty($fecha)) {
             $query .= " AND fecha = '" . $fecha . "'";
         }
-        if (!empty($hora)) {
-            $query .= " AND hora = '" . $hora . "'";
+        if (!empty($tipo_evento)) {
+            $query .= " AND tipo_evento = '" . $tipo_evento . "'";
         }
         if (!empty($ubicacion)) {
             $query .= " AND ubicacion LIKE '%" . $ubicacion . "%'";
@@ -50,8 +52,9 @@
         $result = $conexion->query($query);
     }
 ?>
-
-<form id="form2" name="form2" method="POST" action="vistausuario.php.php">
+<a href="index.php">Volver a Inicio</a>
+<br><br><br>
+<form id="form2" name="form2" method="POST" action="filtradocomun.php">
     
     
     <label for="propietario_reserva">Nombre:</label>
@@ -60,8 +63,13 @@
     <label for="fecha">Fecha:</label>
     <input type="date" id="fecha" name="fecha" value="<?php echo $fecha; ?>">
     
-    <label for="hora">Hora:</label>
-    <input type="time" id="hora" name="hora" value="<?php echo $hora; ?>">
+    <label for="tipo_evento">Tipo</label>
+    <select name="tipo_evento" id="tipo_evento">
+        <option value="">Elija una opción</option>
+        <option value="casamiento">Casamiento</option>
+        <option value="cumpleaños">Cumpleaños</option>
+        <option value="comunion">Comunión</option>
+    </select>
     
     <label for="ubicacion">Ubicación:</label>
     <input type="text" id="ubicacion" name="ubicacion" value="<?php echo $ubicacion; ?>">
@@ -78,7 +86,7 @@
                 <tr>
                     <th>Nombre</th>
                     <th>Fecha</th>
-                    <th>Hora</th>
+                    <th>Tipo</th>
                     <th>Ubicación</th>
                 </tr>
             </thead>
@@ -88,7 +96,7 @@
                     <tr>
                         <td><?php echo $row['propietario_reserva']; ?></td>
                         <td><?php echo $row['fecha']; ?></td>
-                        <td><?php echo $row['hora']; ?></td>
+                        <td><?php echo $row['tipo_evento']; ?></td>
                         <td><?php echo $row['ubicacion']; ?></td>
                     </tr>
                 <?php } ?>
@@ -97,5 +105,11 @@
     </div>
 <?php } ?>
 
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
 </body>
 </html>

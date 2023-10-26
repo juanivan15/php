@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 <title>Editar información del usuario</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <h1>Editar información del usuario</h1>
@@ -82,6 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 </div>
 <button type="submit" class="form-control btn btn-primary">Guardar</button>
 </form>
+<button class="btn btn-primary form-control"><a href="../login/sesionusuario.php">Volver a inicio</a></button>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
     </script>

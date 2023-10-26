@@ -55,12 +55,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
 ?>
 <head>
+    <title>Editar información del evento</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
 </head>
-<title>Editar información del evento</title>
-<link rel="stylesheet" href="style.css">
 <body>
+<h1>Editar información del evento</h1>
+<button class="btn btn-primary form-control"><a href="../login/sesionusuario.php">Volver a inicio</a></button>
 <form class="form" action="<?= $_SERVER["PHP_SELF"]; ?>?id=<?= $id ?>" method="POST">
     <input type="hidden" name="id" value="<?= $id ?>">
 <div class="col-6">

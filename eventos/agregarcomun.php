@@ -33,7 +33,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $stmt->execute();
 
-        header('Location: ../tablas/tablaeventos.php');
+        header('Location: ../reserva.php');
     } catch (PDOException $e){
         echo $e ;
     }
@@ -51,7 +51,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
     <h1>Agregar un nuevo evento</h1>
-    <a href="../login/sesionusuario.php">Volver a Inicio</a>
+    <a href="../index.php">Volver a Inicio</a>
     <br><br>
 <form class="form" action="<?= $_SERVER["PHP_SELF"] ?>" method="POST">
 <div class="row">
