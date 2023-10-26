@@ -35,7 +35,7 @@
         $query = "SELECT * FROM evento WHERE 1 = 1";
         
         
-        if (!empty($nombre)) {
+        if (!empty($propietario_reserva)) {
             $query .= " AND propietario_reserva LIKE '%" . $propietario_reserva . "%'";
         }
         if (!empty($fecha)) {
